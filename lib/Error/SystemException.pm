@@ -1,10 +1,15 @@
+#  You may distribute under the terms of either the GNU General Public License
+#  or the Artistic License (the same terms as Perl itself)
+#
+#  (C) Paul Evans, 2006 -- leonerd@leonerd.org.uk
+
 package Error::SystemException;
 
 use base qw( Error );
 
 =head1 NAME
 
-C<Error::SystemException> - an C<Error> subclass to represent OS-thrown
+C<Error::SystemException> - an L<Error> subclass to represent OS-thrown
 errors.
 
 =head1 DESCRIPTION
@@ -109,9 +114,17 @@ apply to it.
      my $e = shift;
      # handle $e here...
  };
- 
+
+=head1 SEE ALSO
+
+=over 4
+
+=item *
+
+L<Error> - Base module for exception-based error handling
+
+=back
+
 =head1 AUTHOR
 
 Paul Evans E<lt>leonerd@leonerd.org.ukE<gt>
-
-=cut

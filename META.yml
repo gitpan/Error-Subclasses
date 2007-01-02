@@ -1,11 +1,13 @@
-# http://module-build.sourceforge.net/META-spec.html
-#XXXXXXX This is a prototype!!!  It will change in the future!!! XXXXX#
-name:         Error-Subclasses
-version:      0.01
-version_from: 
-installdirs:  site
+---
+name: Error-Subclasses
+version: 0.02
+author:
+  - 'Paul Evans <leonerd@leonerd.org.uk>'
+abstract: A collection of utility exception subclasses
+license: perl
 requires:
-    Error:                         0.15
-
-distribution_type: module
-generated_by: ExtUtils::MakeMaker version 6.30_01
+  Error: 0.15
+provides:
+  Error::SystemException:
+    file: lib/Error/SystemException.pm
+generated_by: Module::Build version 0.26

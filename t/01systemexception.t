@@ -14,16 +14,9 @@ use_ok( "Error::SystemException", () );
 $! = 1;
 my $perror_one = "$!";
 
-# Returns the line number it is called from
-sub this_line()
-{
-    my @caller = caller();
-    return $caller[2];
-}
-
 my $line;
 
-$line = this_line();
+$line = __LINE__;
 my $e = Error::SystemException->new( "A failure" );
 
 ok( defined $e, 'defined $e' );
