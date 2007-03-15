@@ -1,6 +1,6 @@
 ---
 name: Error-Subclasses
-version: 0.02
+version: 0.03
 author:
   - 'Paul Evans <leonerd@leonerd.org.uk>'
 abstract: A collection of utility exception subclasses
