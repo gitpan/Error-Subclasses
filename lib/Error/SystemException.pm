@@ -1,9 +1,12 @@
 #  You may distribute under the terms of either the GNU General Public License
 #  or the Artistic License (the same terms as Perl itself)
 #
-#  (C) Paul Evans, 2006 -- leonerd@leonerd.org.uk
+#  (C) Paul Evans, 2006,2009 -- leonerd@leonerd.org.uk
 
 package Error::SystemException;
+
+use strict;
+use warnings;
 
 use base qw( Error );
 
@@ -127,4 +130,4 @@ L<Error> - Base module for exception-based error handling
 
 =head1 AUTHOR
 
-Paul Evans E<lt>leonerd@leonerd.org.ukE<gt>
+Paul Evans <leonerd@leonerd.org.uk>
