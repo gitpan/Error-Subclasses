@@ -10,6 +10,8 @@ use warnings;
 
 use base qw( Error );
 
+our $VERSION = '0.05';
+
 =head1 NAME
 
 C<Error::SystemException> - an L<Error> subclass to represent OS-thrown
